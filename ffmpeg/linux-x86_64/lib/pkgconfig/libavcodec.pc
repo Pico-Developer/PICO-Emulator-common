@@ -1,0 +1,14 @@
+prefix=/tmp/bytedancer-build-ffmpeg-3647566/install-linux-x86_64
+exec_prefix=${prefix}
+libdir=/tmp/bytedancer-build-ffmpeg-3647566/install-linux-x86_64/lib
+includedir=/tmp/bytedancer-build-ffmpeg-3647566/install-linux-x86_64/include
+
+Name: libavcodec
+Description: FFmpeg codec library
+Version: 61.33.102
+Requires: libavutil >= 59.60.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavcodec -lvpx -lm -pthread -lvpx -lm -pthread -lvpx -lm -pthread -lvpx -lm -pthread -pthread -lm -latomic -L/tmp/bytedancer-build-x264-2748313/install-linux-x86_64/lib -lx264 -lpthread -lm -ldl -L/usr/local/lib -lvpl -ldl -pthread -lstdc++ -lc++
+Libs.private: 
+Cflags: -I${includedir}

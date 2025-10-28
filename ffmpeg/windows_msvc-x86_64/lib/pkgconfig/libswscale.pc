@@ -1,0 +1,14 @@
+prefix=/usr/local/ffmepg
+exec_prefix=${prefix}
+libdir=/usr/local/ffmepg/lib
+includedir=/usr/local/ffmepg/include
+
+Name: libswscale
+Description: FFmpeg image rescaling library
+Version: 8.13.102
+Requires: libavutil >= 59.60.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lswscale 
+Libs.private: 
+Cflags: -I${includedir}

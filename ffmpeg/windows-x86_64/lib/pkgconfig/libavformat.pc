@@ -1,0 +1,14 @@
+prefix=/usr/local/google/home/joshuaduong/build-ffmpeg/install-windows-x86_64
+exec_prefix=${prefix}
+libdir=/usr/local/google/home/joshuaduong/build-ffmpeg/install-windows-x86_64/lib
+includedir=/usr/local/google/home/joshuaduong/build-ffmpeg/install-windows-x86_64/include
+
+Name: libavformat
+Description: FFmpeg container format library
+Version: 57.83.100
+Requires: libavcodec >= 57.107.100, libswresample >= 2.9.100, libavutil >= 55.78.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavformat -luser32 -lws2_32 -lvfw32 -luser32 -lsecur32 -lx264 -lvpx -lvpx -lvpx -lvpx -lm -lpsapi -ladvapi32 -lshell32 -lole32
+Libs.private: 
+Cflags: -I${includedir}

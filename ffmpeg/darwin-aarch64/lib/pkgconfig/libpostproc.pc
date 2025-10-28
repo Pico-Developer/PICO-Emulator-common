@@ -1,0 +1,14 @@
+prefix=/tmp/bytedance-build-ffmpeg-42979/install-darwin-aarch64
+exec_prefix=${prefix}
+libdir=/tmp/bytedance-build-ffmpeg-42979/install-darwin-aarch64/lib
+includedir=/tmp/bytedance-build-ffmpeg-42979/install-darwin-aarch64/include
+
+Name: libpostproc
+Description: FFmpeg postprocessing library
+Version: 58.4.100
+Requires: libavutil >= 59.60.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lpostproc -lm
+Libs.private: 
+Cflags: -I${includedir}

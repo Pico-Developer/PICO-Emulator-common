@@ -1,0 +1,14 @@
+prefix=/usr/local/google/home/joshuaduong/build-ffmpeg/install-windows-x86_64
+exec_prefix=${prefix}
+libdir=/usr/local/google/home/joshuaduong/build-ffmpeg/install-windows-x86_64/lib
+includedir=/usr/local/google/home/joshuaduong/build-ffmpeg/install-windows-x86_64/include
+
+Name: libswresample
+Description: FFmpeg audio resampling library
+Version: 2.9.100
+Requires: libavutil >= 55.78.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lswresample -lm
+Libs.private: 
+Cflags: -I${includedir}

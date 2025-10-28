@@ -1,0 +1,12 @@
+prefix=/usr/local
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: Intel(R) Video Processing Library
+Description: Accelerated video decode, encode, and frame processing capabilities on Intel(R) GPUs
+Version: 2.14
+URL: https://github.com/intel/libvpl
+
+Libs: -L${libdir} -lvpl -ldl   -lstdc++
+Libs.private: 
+Cflags: -I${includedir} -I${includedir}/vpl

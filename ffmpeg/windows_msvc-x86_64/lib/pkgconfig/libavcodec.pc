@@ -1,0 +1,14 @@
+prefix=/usr/local/ffmepg
+exec_prefix=${prefix}
+libdir=/usr/local/ffmepg/lib
+includedir=/usr/local/ffmepg/include
+
+Name: libavcodec
+Description: FFmpeg codec library
+Version: 61.33.102
+Requires: libavutil >= 59.60.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavcodec -libpath:/usr/local/lib vpx.lib -libpath:/usr/local/lib vpx.lib -libpath:/usr/local/lib vpx.lib -libpath:/usr/local/lib vpx.lib -libpath:/usr/local/lib libx264.lib ole32.lib user32.lib -libpath:/usr/local/lib/pkgconfig/../ vpl.lib Ole32.lib msvcrt.lib Advapi32.lib
+Libs.private: 
+Cflags: -I${includedir}

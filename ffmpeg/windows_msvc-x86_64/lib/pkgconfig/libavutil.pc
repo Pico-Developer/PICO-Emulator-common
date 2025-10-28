@@ -1,0 +1,14 @@
+prefix=/usr/local/ffmepg
+exec_prefix=${prefix}
+libdir=/usr/local/ffmepg/lib
+includedir=/usr/local/ffmepg/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 59.60.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil -libpath:/usr/local/lib/pkgconfig/../ vpl.lib Ole32.lib msvcrt.lib Advapi32.lib user32.lib bcrypt.lib
+Libs.private: 
+Cflags: -I${includedir}

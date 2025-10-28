@@ -1,0 +1,14 @@
+prefix=/usr/local/google/home/joshuaduong/build-ffmpeg/install-windows-x86_64
+exec_prefix=${prefix}
+libdir=/usr/local/google/home/joshuaduong/build-ffmpeg/install-windows-x86_64/lib
+includedir=/usr/local/google/home/joshuaduong/build-ffmpeg/install-windows-x86_64/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 55.78.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil -lm
+Libs.private: 
+Cflags: -I${includedir}

@@ -1,0 +1,14 @@
+prefix=/tmp/bytedance-build-ffmpeg-42979/install-darwin-aarch64
+exec_prefix=${prefix}
+libdir=/tmp/bytedance-build-ffmpeg-42979/install-darwin-aarch64/lib
+includedir=/tmp/bytedance-build-ffmpeg-42979/install-darwin-aarch64/include
+
+Name: libavformat
+Description: FFmpeg container format library
+Version: 61.9.107
+Requires: libavcodec >= 61.33.102, libavutil >= 59.60.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavformat -lm -lbz2 -lz
+Libs.private: 
+Cflags: -I${includedir}

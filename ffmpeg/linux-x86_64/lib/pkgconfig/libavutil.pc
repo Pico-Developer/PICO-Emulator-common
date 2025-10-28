@@ -1,0 +1,14 @@
+prefix=/tmp/bytedancer-build-ffmpeg-3647566/install-linux-x86_64
+exec_prefix=${prefix}
+libdir=/tmp/bytedancer-build-ffmpeg-3647566/install-linux-x86_64/lib
+includedir=/tmp/bytedancer-build-ffmpeg-3647566/install-linux-x86_64/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 59.60.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil -lm -L/usr/local/lib -lvpl -ldl -pthread -lstdc++ -lc++ -latomic -pthread
+Libs.private: 
+Cflags: -I${includedir}
